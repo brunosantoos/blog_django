@@ -10,4 +10,7 @@ class Post(models.Model):
     body = models.TextField() #textfield = Maior que string
     created = models.DateTimeField(auto_now_add=True) # data create
     update = models.DateTimeField(auto_now=True) #Data update post
-    
+
+
+    def __str__(self):
+        return self.title
