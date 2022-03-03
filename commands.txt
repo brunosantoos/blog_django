@@ -1,0 +1,17 @@
+django mvt 
+
+
+# Criar um novo projeto
+django-admin startproject nome_do_projeto
+
+# Criar um novo app
+python manage.py startapp npj_scheduling
+
+# Fazer as migrações
+python manage.py makemigrations nome_do_app
+
+# Aplicar as migrações
+python manage.py migrate
+
+# Rodar o server de desenvovlimento
+python manage.py runserver
