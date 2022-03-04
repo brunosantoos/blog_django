@@ -12,6 +12,8 @@ class Post(models.Model):
     created = models.DateTimeField(auto_now_add=True) # data create
     update = models.DateTimeField(auto_now=True) #Data update post
 
+    class Meta:
+        ordering = ("-created",)
 
     def __str__(self):
         return self.title
